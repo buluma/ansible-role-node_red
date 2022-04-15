@@ -1,0 +1,17 @@
+---
+- name: prepare
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  roles:
+    - role: buluma.bootstrap
+    - role: buluma.ca_certificates
+    - role: buluma.epel
+    - role: buluma.npm
+    - role: buluma.users
+      users_group_list:
+        - name: nodered
+      users_user_list:
+        - name: nodered
+          group: nodered
