@@ -28,7 +28,7 @@
 
 - name: create service for node-red
   ansible.builtin.import_role:
-    name: robertdebock.service
+    name: buluma.service
   vars:
     service_list:
       - name: "{{ node_red_service }}"
