@@ -8,6 +8,10 @@
 
 - Add to tracker [\#1](https://github.com/buluma/ansible-role-node_red/issues/1)
 
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#2](https://github.com/buluma/ansible-role-node_red/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1.1](https://github.com/buluma/ansible-role-node_red/tree/v0.1.1) (2022-04-15)
 
 [Full Changelog](https://github.com/buluma/ansible-role-node_red/compare/v0.1.0...v0.1.1)
