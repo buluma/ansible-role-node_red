@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "node_red" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.ca_certificates" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.npm" [fillcolor=green style=filled]
+    "buluma.service" [fillcolor=green style=filled]
+    "buluma.users" [fillcolor=green style=filled]
+  }
+  "node_red" -> "buluma.bootstrap"
+  "node_red" -> "buluma.ca_certificates"
+  "node_red" -> "buluma.epel"
+  "node_red" -> "buluma.npm"
+  "node_red" -> "buluma.service"
+  "node_red" -> "buluma.users"
+}
