@@ -16,6 +16,10 @@ driver:
 platforms:
   - name: "nodered-${image:-docker-centos7-ansible}-${tag:-latest}${TOX_ENVNAME}"
     image: "${namespace:-buluma}/${image:-docker-centos7-ansible}:${tag:-latest}"
+    exposed_ports:
+      - 1880/tcp
+    published_ports:
+      - 0.0.0.0:1880:1880/tcp
     command: /sbin/init
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
