@@ -22,7 +22,7 @@ platforms:
       - 0.0.0.0:1880:1880/tcp
     command: /sbin/init
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
     privileged: yes
     pre_build_image: yes
     tty: true
