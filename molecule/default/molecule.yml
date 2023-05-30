@@ -14,24 +14,14 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "nodered-${image:-docker-centos7-ansible}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-docker-centos7-ansible}:${tag:-latest}"
-    exposed_ports:
-      - 1880/tcp
-    published_ports:
-      - 0.0.0.0:1880:1880/tcp
+  - name: "nodered-${image:-fedora}-${tag:-latest}${TOX_ENVNAME}"
+    image: "${namespace:-buluma}/${image:-fedora}:${tag:-latest}"
     command: /sbin/init
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     privileged: yes
     pre_build_image: yes
-    tty: true
-    environment:
-      container: docker
 provisioner:
   name: ansible
-  config_options:
-    defaults:
-      interpreter_python: auto_legacy_silent
 verifier:
   name: ansible
