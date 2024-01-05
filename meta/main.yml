@@ -1,7 +1,6 @@
 ---
 galaxy_info:
-  author: Michael Buluma
-  namespace: buluma
+  author: buluma
   role_name: node_red
   description: Install and configure Node RED on your system.
   license: Apache-2.0

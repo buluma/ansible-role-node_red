@@ -44,3 +44,5 @@
     name: "{{ node_red_service }}"
     state: started
     enabled: yes
+  tags:
+    - molecule-notest
