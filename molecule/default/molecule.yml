@@ -22,6 +22,8 @@ platforms:
     cgroupns_mode: host
     privileged: yes
     pre_build_image: yes
+    published_ports:
+      - 127.0.0.1:1880:1880/tcp
 provisioner:
   name: ansible
 verifier:

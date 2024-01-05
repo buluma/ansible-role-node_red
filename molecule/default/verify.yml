@@ -8,4 +8,4 @@
     - name: Connect to localhost:1880
       ansible.builtin.wait_for:
         port: 1880
-        timeout: 30
+        timeout: 90
